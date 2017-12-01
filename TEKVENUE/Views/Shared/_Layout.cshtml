@@ -26,7 +26,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
-                <a href="@Url.Action("Index", "Home")" class="navbar-brand">
+                <a href="@Url.Action("Index", "Home")" class="navbar-brand" style="padding-top:1%; margin-top:1%;">
                     <img src="~/images/logo.png" style="height:40px;" title="title" alt="additional title" />
                 </a>
                 @Html.ActionLink("TEKVENUE", "Index", new { controller = "Home" }, new { @class = "navbar-brand" })
@@ -35,7 +35,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li id="about">
+                    <li id="home">
                         @Html.ActionLink("Home", "Index", "Home")
                     </li>
                     <li id="about">
@@ -47,7 +47,8 @@
                     <li id="contact">
                         @Html.ActionLink("Contact", "Index", "Contact")
                     </li>
-                    <li id="portfolio" class="dropdown">
+                    
+                    @*<li id="portfolio" class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li id="1columnportfolio">
@@ -88,7 +89,7 @@
                             
                             
                         </ul>
-                    </li>
+                    </li>*@
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
